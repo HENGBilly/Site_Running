@@ -20,7 +20,7 @@ body {
 a.a1 {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  /*border: 2px solid #ffffff;*/
+  border: 2px solid #ffffff;
   padding: 7.5px 10px;
 }
 
@@ -54,10 +54,6 @@ ul {
   padding: 0 30px;
   justify-content: right;
   justify-content: space-between;
-}
-
-form{
-  padding-top: 50px;
 }
 
 /* Logo */
@@ -179,7 +175,7 @@ section {
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both; /* Stop from showing at start*/
-  color: rgb(0, 0, 0);
+  color: rgb(189, 207, 20);
 }
 
 .section-innerb a {
@@ -190,7 +186,7 @@ section {
 /* Background images */
 .section-a {
  /* TODO 9 https://www.w3schools.com/cssref/pr_background-image.php */
-  background-image: url('../img/giphy.webp');
+  background-image: url('../img/img1.wallspic.com-graphique-boisson_energetique-arts_creatifs-publicite-gemme-2560x1440.jpg');
 }
 
 .section-b {
@@ -222,12 +218,12 @@ section {
   min-width: 130px;
   padding: 15px 50px;
   margin-top: 10px;
-  border: 2px solid #000000;
+  border: 2px solid #e5ff00;
   text-transform: uppercase;
   font-weight: bold;
   overflow: hidden;
   z-index: 2;
-  color: #000000;
+  color: #fbff00;
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -540,123 +536,4 @@ footer ul li a:hover {
   .stats div {
     margin-bottom: 20px;
   }
-}
-
-/******************************************************************************************
-   formulaire
-   ****************************************************************************************/
-   
-   .contact-clean {
-    position:relative;
-    top: 120px;
-  }
-
-  
-  
-  .contact-clean h2 {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 36px;
-    color: inherit;
-  }
-  
-  .section-inner form {
-    margin-bottom: 20px;
-    animation: fadeInUp 0.5s ease-in-out 0.2s;
-    animation-fill-mode: both; /* Stop from showing at start*/
-    border: solid;
-    border-color: #fff;
-    border-radius: 10px;
-    padding: 0px 20px 5px;
-    box-shadow: 5px 5px 20px white;
-  }
-  
-  /****** Bootstrap ****/
-.invisible {
-    visibility: hidden!important;
-}
-
-.text-danger {
-  color: #dc3545!important;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.contact-clean form .form-control {
-  background: #fff;
-  border-radius: 2px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.05);
-  outline: none;
-  color: black;
-  padding-left: 12px;
-  height: 42px;
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 2px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-
-.contact-clean form .btn-primary {
-  background-color: #003380 !important;
-  margin-top: 15px;
-  color: #fff;
-}
-
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-
-.contact-clean form .btn {
-  padding: 16px 32px;
-  border: none;
-  background: none;
-  box-shadow: none;
-  text-shadow: none;
-  opacity: 0.7;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 0.4px;
-  line-height: 1;
-  outline: none !important;
-}
-
-.contact-clean form textarea.form-control {
-  min-height: 100px;
-  max-height: 260px;
-  padding-top: 10px;
-  resize: vertical;
-}
-
-.video {
-  padding-top: 150px;
-
-}
-
-.bordur-vert {
-  border-block-color: green;
-}
-
-.text-vert {
-  color : green;
-}
-
-.bordur-red {
-  border-block-color: red;
 }
