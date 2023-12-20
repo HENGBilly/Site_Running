@@ -183,3 +183,23 @@ function verifierFormulaire2() {
   verifemail()
   verifmdp2()
 }
+let bouton = document.getElementById("menu-btn")
+let bod = document.getElementsByTagName("body")
+let over = document.getElementById("overlay")
+let mobile = document.getElementById("mobile-menu")
+let anh3 = document.querySelector(button)
+anh3.addEventListener("click", openclose)
+function openclose() {
+    if(bouton.classList.contains("open")){
+      bouton.classList.remove("open")
+      bod.classList.remove("stop-scrolling")
+      over.classList.remove("overlay-show")
+      mobile.classList.remove("show-menu")
+    }else{
+      bouton.classList.add("open")
+      bod.classList.add("stop-scrolling")
+      over.classList.add("overlay-show")
+      mobile.classList.add("show-menu")
+    }
+
+}

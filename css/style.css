@@ -11,7 +11,7 @@
 body {
   /* TODO 1 https://www.w3schools.com/cssref/pr_font_font-family.php */
   font-family: Arial, sans-serif;
-  background: rgb(255, 0, 0);
+  background: #1f9c00;
   /* TODO 2 https://www.w3schools.com/cssref/pr_text_color.php FAIT*/
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
@@ -19,7 +19,7 @@ body {
 
 a.a1 {
   text-decoration: none;
-  color: rgb(255, 0, 0, 0.986);
+  color: #197c00;
   /*border: 2px solid #ffffff;*/
   padding: 7.5px 10px;
 }
@@ -103,7 +103,7 @@ form{
   left: 0;
   width: 100%;
   height: 1px;
-  background: #e40000;
+  background: #1b8500;
   transform: scaleX(0);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transform-origin: right center;
@@ -179,7 +179,7 @@ section {
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both; /* Stop from showing at start*/
-  color: rgba(255, 0, 0, 0.986);
+  color: #080808;
 }
 
 .section-innerb a {
@@ -267,7 +267,7 @@ section {
   background-image: url('../img/gros-point-interrogation-theme-sombre-themes-interrogatifs_183270-416.avif');
 }
 
-.btn {
+.btna {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -281,6 +281,7 @@ section {
   overflow: hidden;
   z-index: 2;
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  color: red;
 }
 
 .btnb {
@@ -296,8 +297,8 @@ section {
   font-weight: bold;
   overflow: hidden;
   z-index: 2;
-  color: rgb(255, 0, 0, 0.986);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  color :rgb(0, 155, 21);
 }
 
 .btnc {
@@ -313,15 +314,38 @@ section {
   font-weight: bold;
   overflow: hidden;
   z-index: 2;
-  color: rgba(0, 0, 0, 0.986);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  color: rgb(0, 0, 0);
 }
 
-.btn:hover span {
+
+
+.btna:hover span {
   color: #000000;
 }
 
-.btn .hover {
+.btna .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btna:hover .hover {
+  transform: translateY(0);
+}
+
+.btnb:hover span {
+  color: #000000;
+}
+
+.btnb .hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -334,16 +358,36 @@ section {
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btn:hover .hover {
+.btnb:hover .hover {
   transform: translateY(0);
 }
 
+.btnc:hover span {
+  color: #000000;
+}
+
+.btnc .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #000;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btnc:hover .hover {
+  transform: translateY(0);
+}
 
 /* Footer */
 footer {
   position: relative;
   padding: 55px 0;
-  background-color: rgb(0, 77, 26);
+  background-color: rgb(0, 117, 39);
 }
 
 footer ul {
@@ -381,7 +425,7 @@ footer ul li a:hover {
   height: 20px;
   background: none;
   border: none;
-  color: #e40000;
+  color: #1b8600;
 }
 
 .hamburger-top,
@@ -392,7 +436,7 @@ footer ul li a:hover {
   height: 2px;
   top: 0;
   left: 0;
-  background: #ff0000;
+  background: #1b8800;
   transition: all 0.5s;
 }
 
@@ -654,10 +698,10 @@ footer ul li a:hover {
     animation: fadeInUp 0.5s ease-in-out 0.2s;
     animation-fill-mode: both; /* Stop from showing at start*/
     border: solid;
-    border-color: #00f7ff;
+    border-color: rgb(21, 105, 0);
     border-radius: 10px;
     padding: 0px 20px 5px;
-    box-shadow: 5px 5px 20px rgb(0, 116, 161);
+    box-shadow: 5px 5px 20px rgb(0, 99, 13);
     background-color: rgba(255, 255, 255, 0);
   }
   
@@ -751,7 +795,7 @@ footer ul li a:hover {
 }
 
 #comment-section {
-  margin-top: 30px;
+  margin-top: px;
   padding: 20px;
   background-color: #f8f8f8;
   border: 1px solid #ddd;
