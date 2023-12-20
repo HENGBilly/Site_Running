@@ -126,15 +126,18 @@ function verifpre(){
   }
 }
 
+let alrt2 = document.querySelector("#alrt2")
 let email = document.querySelector("#email")
 
 function verifemail(){
     if(email.value.length < 1 || !email.value.includes("@")){
     //email.style.borderBlockColor = "red"
+    alrt2.classList.remove("invisible")
     email.classList.add("bordur-red")
     email.classList.remove("bordur-vert")
     }else{
     //email.style.borderBlockColor = "green"
+    alrt2.classList.add("invisible")
     email.classList.remove("bordur-red")
     email.classList.add("bordur-vert")
   }
