@@ -63,7 +63,7 @@ form{
 /* Logo */
 .logo {
     /* TODO 6 https://www.w3schools.com/cssref/pr_dim_width.php */
-    height: auto; 
+    height: 50%; 
     width: 40%;
 }
 
