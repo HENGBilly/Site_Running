@@ -100,15 +100,15 @@ function verifmdp() {
   }
 }
 
+let pwd2= document.querySelector("#modp")
+
 function verifmdp2() {
-  if(pwd.value.length < 2){
-//    pwd.style.borderBlockColor = "red"
-    pwd.classList.add("bordur-red")
-    pwd.classList.remove("bordur-vert")
+  if(pwd2.value.length < 8){
+    pwd2.classList.add("bordur-red")
+    pwd2.classList.remove("bordur-vert")
   }else{
-//    pwd.style.borderBlockColor = "green"
-    pwd.classList.remove("bordur-red")
-    pwd.classList.add("bordur-vert")
+    pwd2.classList.remove("bordur-red")
+    pwd2.classList.add("bordur-vert")
   }
 }
 
@@ -129,7 +129,7 @@ function verifpre(){
 let email = document.querySelector("#email")
 
 function verifemail(){
-    if(email.value.length < 1){
+    if(email.value.length < 1 || !email.value.includes("@")){
     //email.style.borderBlockColor = "red"
     email.classList.add("bordur-red")
     email.classList.remove("bordur-vert")
