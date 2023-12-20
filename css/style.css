@@ -13,7 +13,7 @@ body {
   font-family: Arial, sans-serif;
   background: #1f9c00;
   /* TODO 2 https://www.w3schools.com/cssref/pr_text_color.php FAIT*/
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background-color: rgb(0, 0, 0);
 }
 
@@ -235,7 +235,7 @@ section {
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both; /* Stop from showing at start*/
-  color: rgba(255, 255, 255, 0.986);
+  color: rgba(0, 0, 0, 0.986);
 }
 
 .section-innerd a {
@@ -264,7 +264,7 @@ section {
 }
 
 .section-d {
-  background-image: url('../img/gros-point-interrogation-theme-sombre-themes-interrogatifs_183270-416.avif');
+  background-image: url('../img/16860954-point-d-interrogation-sur-fond-jaune-vectoriel.jpg');
 }
 
 .btna {
@@ -527,7 +527,7 @@ footer ul li a:hover {
 }
 
 .mobile-main-menu ul li a {
-  color: #fff;
+  color: #1c8b01;
   transition: color 0.6s;
 }
 
