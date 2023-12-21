@@ -143,6 +143,18 @@ function verifemail(){
   }
 }
 
+function verifemail2(){
+  if(email.value.length < 1 || !email.value.includes("@")){
+  //email.style.borderBlockColor = "red"
+  email.classList.add("bordur-red")
+  email.classList.remove("bordur-vert")
+  }else{
+  //email.style.borderBlockColor = "green"
+  email.classList.remove("bordur-red")
+  email.classList.add("bordur-vert")
+}
+}
+
 let msg1 = document.querySelector("#msg")
 
 function verifmsg(){
@@ -183,9 +195,11 @@ function verifierFormulaire() {
 }
 anh.addEventListener("click", verifierFormulaire2)
 function verifierFormulaire2() {
-  verifemail()
+  verifemail2()
   verifmdp2()
 }
+
+
 let bouton = document.getElementById("menu-btn")
 let bod = document.getElementsByTagName("body")
 let over = document.getElementById("overlay")

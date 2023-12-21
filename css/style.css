@@ -267,6 +267,22 @@ section {
   background-image: url('../img/16860954-point-d-interrogation-sur-fond-jaune-vectoriel.jpg');
 }
 
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 130px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .btna {
   position: relative;
   display: inline-block;
