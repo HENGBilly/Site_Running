@@ -1,149 +1,123 @@
-<!-- https://docs.emmet.io/cheat-sheet/ -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
     <title>CielWeb</title>
-  </head>
-  <body>
-    <div id="overlay"></div>
-   
-    <!-- Menu Pour Mobile -->
-    <div id="mobile-menu" class="mobile-main-menu">
-      <ul>
+</head>
+<body>
+<div id="overlay"></div>
+
+<!-- Menu Pour Mobile -->
+<div id="mobile-menu" class="mobile-main-menu">
+    <ul>
         <li><a class="lien" href="#sA">Inscription</a></li>
         <li><a class="lien" href="#sC">Bien être</a></li>
         <li><a class="lien" href="#SB">Calendrier des courses</a></li>
         <li><a class="lien" href="#SD">à notre sujet</a></li>
-        <li class="mobile-only"><a href="index.html">Acceuil</a></li>
+        <li class="mobile-only"><a href="index.html">Accueil</a></li>
         <li class="mobile-only"><a href="signup.html">SignUp</a></li>
         <li class="mobile-only"><a href="signin.html">SignIn</a></li>
-      </ul>
-    </div>
+    </ul>
+</div>
 
-
-    <!-- Header et Menu-->
-    <header class="main-header">
-      <div class="logo">
-       <nav class="navbar">
-        <div class="container">
-          <div class="logo"><a href="index.html"><img src="img/logo_200x200-removebg-preview.png" alt="running"></a></div>
-        </div>
-       </nav>
-      </div>
-      <nav class="desktop-main-menu">
-        <ul>
-          <li><a class="a1" href="index.html">Acceuil</a></li>
-          <li><a class="a1" href="signin.html">Sign In</a></li>
-          <li><a class="a1" href="signup.html">Sign Up</a></li>
-          <li><a href="#"><img src="img/user-svgrepo-com.svg"></a></li>
-          </ul>
-      </nav>
-    </header>
-
-
-    <!-- Hamburger Menu -->
-    <button id="menu-btn" class="hamburger" type="button" onclick="open-close">
-      <span class="hamburger-top"></span>
-      <span class="hamburger-middle"></span>
-      <span class="hamburger-bottom"></span>
-    </button>
-
-
-    <!-- Section A -->
-    <section id="sA" class="section-a">
-      <div class="section-innerb">
-       <H2>Courir c'est la vie</H2>
-       <a class="a2 btna" href="signup.html">
-        <div class="hover"></div><span>Veuillez vous inscrire !</span>
-        
-       </a>
-      </div>
-    </section>
-
-    
-    <!-- Section C -->
-    <section id="sC" class="section-c">
-      <div class="section-innerc">
-       <H2>Faire du sport, c'est prendre soin de soi-même !</H2>
-       <a class="a2 btnb" href="https://www.foodspring.fr/magazine/renforcement-musculaire-et-course-a-pied">
-        <div class="hover"></div><span>Entraînez vous !</span>
-       </a>
-      </div>
-    </section>
-
-   
-    <!-- Section B -->
-    <section id="SB" class="section-b">
-      <iframe class="video" width="560" height="465" src="https://www.youtube.com/embed/926F34Eg6Mg?si=T11fGI4egRAZF2rN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <div class="section-inner">
-        <div class="container">
-       </nav>
-      </div>
-      <nav class="desktop-main-menu">
-       <H2>Prochaine course </H2>
-       <a class="a2 btnc" href="https://jogging-plus.com/calendrier/marathons/france/">
-        <div class="hover"></div><span>CLIQUEZ !</span>
-        
-       </a>
-      </div>
-    </section>
-
-        <!-- Section D -->
-        <section id="SD" class="section-d">
-          <div class="section-innerd">
+<!-- Header et Menu-->
+<header class="main-header">
+    <div class="logo">
+        <nav class="navbar">
             <div class="container">
-           </nav>
-          </div>
-          <nav class="desktop-main-menu">
-           <H2>Historiquement :</H2>
+                <a href="index.html"><img src="img/logo_200x200-removebg-preview.png" alt="running" /></a>
+            </div>
+        </nav>
+    </div>
+    <nav class="desktop-main-menu">
+        <ul>
+            <li><a class="a1" href="index.html">Accueil</a></li>
+            <li><a class="a1" href="signin.html">Sign In</a></li>
+            <li><a class="a1" href="signup.html">Sign Up</a></li>
+            <li><a href="signin.html"><img src="img/user-svgrepo-com.svg" alt="User" /></a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hamburger Menu -->
+<button id="menu-btn" class="hamburger" type="button" onclick="open-close">
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+</button>
+
+<!-- Section A -->
+<section id="sA" class="section-a">
+    <div class="section-innerb">
+        <h2>Courir c'est la vie</h2>
+        <a class="a2 btna" href="signup.html">
+            <div class="hover"></div><span>Veuillez vous inscrire !</span>
+        </a>
+    </div>
+</section>
+
+<!-- Section C -->
+<section id="sC" class="section-c">
+    <div class="section-innerc">
+        <h2>Faire du sport, c'est prendre soin de soi-même !</h2>
+        <a class="a2 btnb" href="https://www.foodspring.fr/magazine/renforcement-musculaire-et-course-a-pied">
+            <div class="hover"></div><span>Entraînez vous !</span>
+        </a>
+    </div>
+</section>
+
+<!-- Section B -->
+<section id="SB" class="section-b">
+    <iframe class="video" width="560" height="465" src="https://www.youtube.com/embed/926F34Eg6Mg?si=T11fGI4egRAZF2rN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="section-inner">
+        <div class="container">
+            <h2>Prochaine course</h2>
+            <a class="a2 btnc" href="https://jogging-plus.com/calendrier/marathons/france/">
+                <div class="hover"></div><span>CLIQUEZ !</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Section D -->
+<section id="SD" class="section-d">
+    <div class="section-innerd">
+        <div class="container">
+            <h2>Historiquement :</h2>
             <a class="a2 btna" href="index2.html">
-              <div class="hover"></div><span>En savoir plus..</span>
-              
-             </a>
-          </div>
-        </section>
+                <div class="hover"></div><span>En savoir plus..</span>
+            </a>
+        </div>
+    </div>
+</section>
 
-        <section id="comment-section">
-          <h2 class="bl">Commentaires</h2>
-          <form id="comment-form">
-              <label class="bl"for="comment-name">Nom:</label>
-              <input type="text" id="comment-name" name="comment-name" required>
-  
-              <label class="bl" for="comment-message">Commentaire:</label>
-              <textarea id="comment-message" name="comment-message" required></textarea>
-  
-              <button class="bl" type="submit">Ajouter un commentaire</button>
-          </form>
-  
-          <div id="comments">
-          </div>
-        </section>
+<section id="comment-section">
+    <h2 class="bl">Commentaires</h2>
+    <form id="comment-form">
+        <label class="bl" for="comment-name">Nom:</label>
+        <input type="text" id="comment-name" name="comment-name" required />
 
+        <label class="bl" for="comment-message">Commentaire:</label>
+        <textarea id="comment-message" name="comment-message" required></textarea>
 
-    <footer>
-     <ul>
-      <li>CielWeb © 2023</li>
-      <li>
-        <a href="https://twitter.com/?lang=fr">TWITTER</a:href>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/">YOUTUBE</a:href>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/">INSTAGRAM</a:href>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/billy-heng-0380ab293">LINKEDIN</a:href>
-      </li>
-     </ul>
-    </footer>
-  </body>
+        <button class="bl" type="submit">Ajouter un commentaire</button>
+    </form>
+
+    <div id="comments"></div>
+</section>
+
+<footer>
+    <ul>
+        <li>CielWeb © 2023</li>
+        <li><a href="https://twitter.com/?lang=fr">TWITTER</a></li>
+        <li><a href="https://www.youtube.com/">YOUTUBE</a></li>
+        <li><a href="https://www.instagram.com/">INSTAGRAM</a></li>
+        <li><a href="https://www.linkedin.com/in/billy-heng-0380ab293">LINKEDIN</a></li>
+    </ul>
+</footer>
+</body>
 </html>
-
-
-
