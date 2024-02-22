@@ -217,7 +217,103 @@ async function processDataUserAccount(user_email) {
          console.error("Fetch error:", error);
        });
    }
-   verifierFormulaire2(){
+
+  function verifpre(pre) {
+    if (pre.length < 1) {
+      alert("Please enter a valid first name.");
+      return false;
+    }
+    return true;
+  }
+  
+  function verifnom(nom) {
+    if (nom.length < 1) {
+      alert("Please enter a valid last name.");
+      return false;
+    }
+    return true;
+  }
+  
+  function verifmes(mes) {
+    if (mes.length < 1) {
+      alert("Please enter a valid message.");
+      return false;
+    }
+    return true;
+  }
+button = document.querySelector(".btn.btn-primary");
+button.addEventListener("click", retrieveUsers);
+
+async function retrieveUsers() {
+  if (verifierFormulaire2()) { // Utilise verifierFormulaire2 au lieu de verifierFormulaire
+    const port = "3003";
+    const url = "http://localhost:3003/get/user";
+    const data = getUserFromSignUp();
+    const params = new URLSearchParams(Object.entries(data));
+
+    const { writeFile, readFile } = require('fs');
+    const path = './accounts.json';
+
+// Route pour recevoir les données du client
+    app.post('/createUser', (req, res) => {
+  // Récupérer les données du corps de la requête
+      const userData = req.body;
+
+  // Vérifier si les données sont valides (ex: présence de champs obligatoires, validation d'email, etc.)
+  // Ici, vous pouvez utiliser des fonctions de validation ou des bibliothèques de validation comme Joi.
+
+  // Lire le contenu actuel du fichier accounts.json
+  readFile(path, (error, data) => {
+    if (error) {
+      console.log(error);
+      return res.status(500).send('Internal Server Error');
+    }
     
+    // Analyser les données JSON
+    const accounts = JSON.parse(data);
+    
+    // Ajouter le nouvel utilisateur aux données existantes
+    accounts.push(userData);
+
+    // Écrire les données mises à jour dans le fichier
+    writeFile(path, JSON.stringify(accounts, null, 2), (err) => {
+      if (err) {
+        console.log('Failed to write updated data to file');
+        return res.status(500).send('Internal Server Error');
+      }
+      console.log('Updated file successfully');
+      // Envoyer une réponse réussie au client
+      res.status(200).send('User created successfully');
+    });
+  });
+});
+  }
+}
+
+  function verifierFormulaire2() {
+    inputs = getUserFromSignUp();
+    var pre = inputs.prenom;
+    var nom = inputs.name;
+    var mes = inputs.message;
+    var email = inputs.email;
+    var password = inputs.password;
+    return verifEmail(email) && verifPassword(password) && verifpre(pre) && verifnom(nom) && verifmes(mes);
    }
- }
+  function getUserFromSignUp() {
+    // Access input elements
+    const inputs = document.getElementsByTagName("input");
+    
+    // Store values of prenom, name, and message fields
+    const pre = inputs[2].value;
+    const nom = inputs[3].value;
+    const mes = inputs[4].value;
+  
+    // Return the values as an object
+    return {
+      prenom: pre,
+      name: nom,
+      message: mes
+    };
+  }
+  
+  }
