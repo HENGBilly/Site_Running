@@ -23,7 +23,7 @@ app.get('/signIn', (req, res) => {
 
 // http://127.0.0.1:3003/signUp 
 app.get('/signUp', (req, res) => {
-  res.sendFile(path.join(__dirname, 'signup.html'));
+  res.sendFile(path.join(__dirname, 'signUp.html'));
 });
 
 //Users @ http://127.0.0.1:3003/get/user
